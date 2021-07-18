@@ -1,0 +1,11 @@
+- hosts: avi.slave.com
+  tasks:
+  - package:
+          name: httpd
+          state: present
+  - copy:
+          src: /home/avi/index.html
+          dest: /var/www/html
+  - service:
+          name: httpd
+          state: started
