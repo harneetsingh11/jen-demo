@@ -1,0 +1,1 @@
+avi.slave.com ansible_user=root ansible_ssh_pass=1021 ansible_connection=ssh
